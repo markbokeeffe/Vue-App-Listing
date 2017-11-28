@@ -64,12 +64,12 @@ export default {
         this.translatedTerm.property = term.name;
 
         console.log(this.translatedTerm);
-      /**  axios.post('http://localhost:3000/api/language111',
+        axios.post('http://localhost:3000/api/language111',
           this.translatedTerm, // the data to post
           { headers: {
             'Content-type': 'application/x-www-form-urlencoded',
             }
-          }).then(response => console.log("DONE"));**/
+          }).then(response => console.log("DONE"));
       },
       setPage: function(pageNumber) {
         this.currentPage = pageNumber
